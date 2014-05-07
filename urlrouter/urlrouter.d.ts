@@ -8,7 +8,7 @@
 declare module "urlrouter" {
 	import http = require("http");
 
-	function UrlRouterInternal(handler:(app:UrlRouterInternal.App) => void):UrlRouterInternal.HttpHandler;
+	function UrlRouterInternal(handler:(app:UrlRouterInternal.App) => void, opts?: UrlRouterInternal.Options):UrlRouterInternal.HttpHandler;
 
 	module UrlRouterInternal {
 
